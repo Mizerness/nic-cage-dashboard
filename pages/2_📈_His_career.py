@@ -49,7 +49,7 @@ filtered_movies = cage_movies[
 
 # Display the filtered movies with one decimal place for ratings
 if not filtered_movies.empty:
-    st.markdown(f"<h1 style='text-align: center;'>📊 Main dashboard</h1>", unsafe_allow_html=True)
+    st.markdown(f"<h1 style='text-align: center;'>📈 His career</h1>", unsafe_allow_html=True)
 
     # Prepare data for charting
     chart_data = filtered_movies.groupby('Year').agg({'Rating': 'mean', 'Title': 'count'}).reset_index()
@@ -73,7 +73,9 @@ if not filtered_movies.empty:
 
 
     # Get the top 3 movies with the highest ratings
-    top_movies = cage_movies.nlargest(3, 'Rating')[['Title', 'Poster', 'Rating']]
+    top_movies = filtered_movies.nlargest(3, 'Rating')[['Title', 'Poster', 'Rating']]
+
+    st.markdown(f"<h3 style='text-align: center;'>Best movies from Nic Cage between {year_range[0]} and {year_range[1]}</h3>", unsafe_allow_html=True)
 
     # Create three columns for displaying the posters
     col1, col2, col3 = st.columns(3)

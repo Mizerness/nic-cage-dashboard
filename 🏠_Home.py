@@ -2,41 +2,37 @@ import streamlit as st
 from streamlit.logger import get_logger
 from utils.utils import add_logo
 
-
 LOGGER = get_logger(__name__)
-
 
 def run():
     
     st.set_page_config(
-        page_title="Home",
-        page_icon="🏠",
+        page_title="Nicolas Cage",
+        page_icon="🎬",
     )
 
     add_logo()
 
-    st.write("# Curious about Nicolas Cage's career?")
+    st.write("# Dive into Nicolas Cage's Legendary Career")
 
-    st.sidebar.success("Select a page above.")
+    st.sidebar.success("Navigate through the options above.")
 
     st.markdown(
         """
-        Streamlit is an open-source app framework built specifically for
-        Machine Learning and Data Science projects.
-        **👈 Select a demo from the sidebar** to see some examples
-        of what Streamlit can do!
-        ### Want to learn more?
-        - Check out [streamlit.io](https://streamlit.io)
-        - Jump into our [documentation](https://docs.streamlit.io)
-        - Ask a question in our [community
-          forums](https://discuss.streamlit.io)
-        ### See more complex demos
-        - Use a neural net to [analyze the Udacity Self-driving Car Image
-          Dataset](https://github.com/streamlit/demo-self-driving)
-        - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
-    """
+        Welcome to this Nicolas Cage career explorer! This app provides a detailed look at the iconic actor's filmography, using data sourced from IMDB.
+        
+        **👈 Select a page from the sidebar** to start exploring the remarkable career of one of the most versatile actors of our time.
+        
+        ### What You’ll Find:
+        - **Exploratory Analysis**: Dive into the dataset we're using for this app, with insights and clean data preparation explained in the code.
+        - **Career Overview**: A deep dive into Nicolas Cage's career highlights, along with some fun and surprising insights.
+        - **Nic Cage vs. The World**: Compare Nicolas Cage's career with other actors and see how he stacks up in this fun face-off!
+        
+        ### Need Assistance?
+        - **Email**: lazaremasset@gmail.com
+        - **GitHub**: Mizerness
+        """
     )
-
 
 if __name__ == "__main__":
     run()
