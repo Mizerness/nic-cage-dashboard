@@ -45,7 +45,7 @@
 ## 📍 Overview
 
 <p>This Streamlit app provides you with a detailed tour of Nicolas Cage's brilliant film career. Through three different pages, you can learn more about the GOAT of cinema.</p>
-<p>You can find a demo <a href="https://nicolas-cage-dashboard.streamlit.app/">here</a>.</p>
+<p>You can find a demo <a target="_blank" href="https://nicolas-cage-dashboard.streamlit.app/">here</a>.</p>
 
 ---
 
