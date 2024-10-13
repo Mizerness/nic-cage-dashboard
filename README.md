@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlvNgetEBhUikAQS1CPYOE1qjsjhlSCFH8mA&s" width="60%" alt="NIC-CAGE-DASHBOARD-logo">
+  <img src="https://cdn.britannica.com/64/135864-050-57268027/Nicolas-Cage-2009.jpg" width="60%" alt="NIC-CAGE-DASHBOARD-logo">
 </p>
 <p align="center">
     <h1 align="center">NICOLAS CAGE DASHBOARD</h1>
