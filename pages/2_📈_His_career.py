@@ -9,7 +9,7 @@ df = pd.read_csv('data/imdb-movies-cleaned.csv')
 # Filter the DataFrame for movies that include 'Nicolas Cage' in the 'Cast' column
 cage_movies = df[df['Cast'].str.contains('Nicolas Cage', na=False)]
 
-add_logo()
+#add_logo()
 
 # Sidebar for filtering
 st.sidebar.title("Filter Options")
@@ -43,7 +43,7 @@ def check_genre(row):
 # Apply filters
 filtered_movies = cage_movies[
     (cage_movies['Year'].between(year_range[0], year_range[1])) &  # Filter by year range
-    (cage_movies['Rating'].between(rating_filter[0], rating_filter[1], inclusive=True)) &  # Filter by rating
+    (cage_movies['Rating'].between(rating_filter[0], rating_filter[1], inclusive='both')) &  # Filter by rating
     (cage_movies.apply(check_genre, axis=1))  # Apply genre filter
 ].dropna(subset=['Genre', 'Rating'])  # Drop rows with NaN in 'Genre' or 'Rating'
 

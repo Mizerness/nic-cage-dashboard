@@ -5,7 +5,7 @@ from urllib.error import URLError
 from utils.utils import extract_actors, add_logo
 
 # Page config
-add_logo()
+#add_logo()
 
 # Load data
 @st.cache_data

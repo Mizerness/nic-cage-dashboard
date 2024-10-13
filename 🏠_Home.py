@@ -11,7 +11,7 @@ def run():
         page_icon="🎬",
     )
 
-    add_logo()
+    #add_logo()
 
     st.write("# Dive into Nicolas Cage's Legendary Career")
 

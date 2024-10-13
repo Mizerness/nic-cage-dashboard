@@ -5,7 +5,7 @@ from utils.utils import extract_actors, add_logo
 
 ## Page config
 
-add_logo()
+#add_logo()
 
 ## Header config
 actors = extract_actors('data/imdb-movies-cleaned.csv')
